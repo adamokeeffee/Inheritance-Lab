@@ -6,15 +6,19 @@ public class Person {
 
     private String address;
 
-    private int number;
+    private String number;
 
-    public Person(String name, String address, int number) {
+    public Person(String name, String address, String number) {
         this.name = name;
         this.address = address;
         this.number = number;
     }
 
-
+    public Person() {
+        name = " ";
+        address = " ";
+        number = " ";
+    }
 
     @Override
     public String toString() {
@@ -41,11 +45,11 @@ public class Person {
         this.address = address;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 }
